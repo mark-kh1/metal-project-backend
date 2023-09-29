@@ -2,7 +2,7 @@ name: My Workflow
 on:
   workflow_dispatch:
   push:
-    - master
+    branches: ['master']
 
 jobs:
   first_job:
