@@ -2,9 +2,7 @@
 
 cd "${GITHUB_WORKSPACE}"
 
-echo ${NUM} >> ./number.txt
-
-cat ./number.txt
+echo "coolest num is ${NUM}"
 
 echo "my_const=PR666" >> "${GITHUB_OUTPUT}"
 
