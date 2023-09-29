@@ -2,8 +2,8 @@
 
 cd "${GITHUB_WORKSPACE}"
 
-echo ${NUM} >> ./number.txt
-echo "coolest num is ${NUM}"
+echo ${INPUT_NUM} >> ./number.txt
+echo "coolest num is ${INPUT_NUM}"
 
 cat ./number.txt
 
