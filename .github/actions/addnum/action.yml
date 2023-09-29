@@ -1,0 +1,14 @@
+name: "add num"
+description: "text"
+author: "mark"
+inputs:
+  num:
+    description: "num you want"
+    required: true
+outputs:
+  my_const:
+    description: "always 666"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+

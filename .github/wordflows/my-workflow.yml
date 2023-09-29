@@ -1,0 +1,16 @@
+name: My Workflow
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: add number
+        id: addn
+        uses: ./.github/actions/addnum
+      - run: |
+          echo "Const is: ${{ steps.addn.outputs.my_const }}"
+
