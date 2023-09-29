@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd "${GITHUB_WORKSPACE}"
 
 echo ${NUM} >> ./number.txt
