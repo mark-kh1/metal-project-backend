@@ -12,6 +12,8 @@ jobs:
       - name: add number
         id: addn
         uses: ./.github/actions/addnum
+        with:
+          num: 7
       - run: |
           echo "Const is: ${{ steps.addn.outputs.my_const }}"
 
