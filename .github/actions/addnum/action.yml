@@ -6,6 +6,8 @@ inputs:
     description: "num you want"
     required: true
   is_empty:
+    description: "is empty"
+    required: true
 outputs:
   my_const:
     description: "always 666"

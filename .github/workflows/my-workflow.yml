@@ -7,8 +7,6 @@ on:
         options:
           - notempty
           - empty
-  push:
-    branches: ['master']
 
 jobs:
   first_job:
@@ -20,6 +18,7 @@ jobs:
         uses: ./.github/actions/addnum
         with:
           num: 71
+          is_empty: ${{ inputs.someinput }}
       - run: |
           echo "Const is: ${{ steps.addn.outputs.my_const }}"
       - uses: peter-evans/create-pull-request@v5
