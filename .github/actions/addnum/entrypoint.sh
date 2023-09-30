@@ -7,7 +7,7 @@ echo "coolest num is ${INPUT_NUM}"
 
 cat ./number.txt
 
-if [[ "${INPUT_ISEMPTY}" == "notemptry" ]]
+if [[ "${INPUT_ISEMPTY}" == "notempty" ]]
 then
     echo "my_const=PR666" >> "${GITHUB_OUTPUT}"
 fi

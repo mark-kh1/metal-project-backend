@@ -22,5 +22,6 @@ jobs:
       - run: |
           echo "Const is: ${{ steps.addn.outputs.my_const }}"
       - uses: peter-evans/create-pull-request@v5
+        if: ${{ steps.addn.outputs.my_const }}
         with:
-          title: "New PR: ${{ steps.addn.outputs.my_const }}"
+          title: "New PR haha: ${{ steps.addn.outputs.my_const }}"
